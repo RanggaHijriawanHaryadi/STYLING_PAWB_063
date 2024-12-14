@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Todo</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item">
+            <img src="/images/1a.png" alt="gambar">
+            <a class="nav-link " href="/">Home</a>
+            <a class="nav-link" href="/todo">Todo</a>
+            <a class="nav-link" href="/contact">Contact</a>
+        </div>
+        <div class="nav-b">
+            <form action="/login/logout"class="d-inline">
+                <button class="btn btn-link nav-link" type="submit">
+                    <i class="fas fa-sign-out-alt logout-icon"></i> Sign Out
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="add-todo">
+        <h1>Add Todo</h1>
+        <form action="/todo/add" method="POST">
+        <div>
+            <label for="judul">Judul:</label>
+            <input type="text" id="judul" name="judul" required>
+        </div>
+        <div>
+            <label for="deskripsi">Deskripsi:</label>
+            <input type="text" id="deskripsi" name="deskripsi" required>
+        </div>
+        <button type="submit">Add Todo</button>
+        </form>
+    </div>
+</body>
+</html>

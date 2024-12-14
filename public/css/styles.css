@@ -1,0 +1,288 @@
+/* Styling untuk container utama */
+.container {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 15px;
+}
+
+img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.card-box {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.card-box .logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+
+.form-box {
+    width: 100%;
+}
+
+.input-box {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+}
+
+/* Styling hover untuk input box */
+.input-box:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk tombol login */
+button {
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Styling untuk elemen h5 */
+.card-box h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.card-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+
+.form-group .input-box {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #141212;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.form-group .input-box:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+
+}
+
+.navbar {
+    display: flex;
+    background-color: #087ec7;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 80px; /* Tetapkan tinggi navbar */
+    position: sticky; /* Posisi tetap relatif terhadap elemen induknya */
+    top: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navbar .nav-link {
+    color: rgb(249, 248, 248);
+    text-decoration: none; /* Hapus garis bawah default */
+    font-size: 18px; /* Ukuran font yang konsisten */
+    padding: 15px 10px; /* Konsistensi jarak */
+    display: inline-block; /* Membuat padding berlaku sepenuhnya */
+    transition: all 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+    color: #f7f7f7; /* Opsional: Ubah warna teks saat hover */
+}
+
+.nav-b {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 80px; /* Sesuaikan ukuran gambar */
+    margin-right: 5px;
+}
+
+
+
+.isi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 1rem;
+    
+}
+
+.isi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Mengisi ruang yang tersedia */
+    text-align: center; /* Untuk konten dalam */
+    width: 100%; /* Opsional, agar konten menyesuaikan lebar penuh */
+}
+
+h1,
+p,
+.btn {
+    margin: 10px 0;
+    /* Memberikan jarak antar elemen */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.container-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menjaga elemen berada di tengah secara horizontal */ /* Menjaga konten dimulai dari atas */
+    margin-top: 60px; /* Memberikan jarak dari navbar (sesuaikan dengan tinggi navbar) */
+}
+.container-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    justify-content: center; /* Pusatkan elemen secara vertikal */
+    min-height: 200px; /* Atur tinggi container */
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.todo {
+    margin: 0; /* Hilangkan margin default */
+    font-size: 2rem; /* Atur ukuran font sesuai kebutuhan */ 
+}
+
+.btn {
+    padding: 10px 20px; /* Atur padding tombol */
+    font-size: 1rem; /* Atur ukuran font tombol */
+    text-align: center; /* Pusatkan teks tombol */
+    display: inline-block; /* Pastikan tombol tetap inline */
+}
+
+.modal-container {
+    display: flex;
+    justify-content: flex-start;   /* Menjaga konten tetap berada di kiri atas */
+}
+
+#todoList {
+    display: grid; /* Menggunakan CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan lebar yang sama */
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Menyusun grid di tengah secara horizontal */
+    align-content: center; /* Opsional: Menyusun grid di tengah secara vertikal */
+}
+
+.todo-card {
+    width: 100%;                   /* Memastikan card mengisi ruang grid */
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;                /* Menyusun teks di dalam card ke kiri */
+}
+
+.todo-card h5 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.todo-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Memastikan tombol aksi ada di bagian bawah */
+}
+
+.card-actions button {
+    width: auto; /* Tombol tidak terlalu besar */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    #todoList {
+        grid-template-columns: repeat(2, 1fr); /* Menggunakan 2 kolom untuk layar lebih kecil */
+        justify-content: center; /* Tetap memastikan grid di tengah */
+    }
+}
+
+@media (max-width: 480px) {
+    #todoList {
+        grid-template-columns: 1fr; /* Menggunakan 1 kolom untuk layar sangat kecil */
+        justify-content: center; /* Tetap memastikan grid di tengah */
+    }
+}
+.todo-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-actions .btn-danger {
+    flex: 0.5; /* Tombol Delete lebih kecil daripada tombol Edit */
+}
+
+.modal-body .form-control {
+    width: 100%; /* Membuat input di modal mengisi seluruh lebar */
+}
